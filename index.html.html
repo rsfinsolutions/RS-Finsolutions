@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Finsolutions - Simplifying Finance, Strengthening Growth</title>
+    <!-- Bootstrap CSS for Professional Layout (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts for Professional Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #007bff !important;
+            box-shadow: 0 2px 10px rgba(0,123,255,0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: #ffc107 !important;
+            transition: color 0.3s ease;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,123,255,0.8), rgba(0,123,255,0.8)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #007bff;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            border-color: #25D366;
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            border-color: #128C7E;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37,211,102,0.3);
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #007bff;
+            font-weight: 700;
+        }
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,123,255,0.2);
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+        }
+        .service-card i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .service-card:hover i {
+            color: #ffc107;
+        }
+        .filing-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .filing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,123,255,0.15);
+        }
+        .filing-card h5 {
+            color: #000000;
+            font-weight: 700;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        .contact-form {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation (Updated "Filings" link) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><i class="fas fa-chart-line me-2"></i>RS Finsolutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#filings">Filings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container fade-in-up">
+            <h1>Simplifying Finance, Strengthening Growth</h1>
+            <p>We empower startups and businesses with expert financial solutions, handled by CA Finalists under seasoned Chartered Accountants.</p>
+            <a href="#contact" class="btn btn-primary">Get Started Today</a>
+            <p class="mt-4"><i class="fas fa-phone me-2"></i>9905262859</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Comprehensive Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-building"></i>
+                        <h4>Company Registration</h4>
+                        <p>Pvt Ltd / LLP / OPC setups with full support.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I'm interested in Company Registration (Pvt Ltd / LLP / OPC) services." class="btn btn-whatsapp mt-3" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <h4>GST & Tax Filing</h4>
+                        <p>Income Tax, GST Registration, TDS Returns, and compliance.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I'm interested in GST & Income Tax Filing and Bookkeeping services." class="btn btn-whatsapp mt-3" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>ROC Compliance</h4>
+                        <p>Annual filings, audits, and regulatory support.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I'm interested in ROC Compliance & Annual Filings services." class="btn btn-whatsapp mt-3" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Financial Advisory</h4>
+                        <p>Business setup, tax planning, and process optimization.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I'm interested in Business Setup & Financial Advisory services." class="btn btn-whatsapp mt-3" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Licenses & Registrations</h4>
+                        <p>Food License, Trade License, MSME, PAN/TAN, and more.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I'm interested in All Types of Licenses (Food Licence, Trade Licence, etc.) services." class="btn btn-whatsapp mt-3" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Bookkeeping & Reporting</h4>
+                        <p>SOP Preparation, MIS Reports, Ledger Reviews.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I'm interested in Bookkeeping, MIS Report Preparation, and Ledger Review services." class="btn btn-whatsapp mt-3" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Documents & Filings Section (Updated: No Dates, Focus on Document/Filing Names) -->
+    <section id="filings" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Key Documents & Filings</h2>
+            <p class="text-center mb-5">Essential ROC compliances and financial filings for businesses. Our services ensure accurate preparation and submission. (Consult us for your specific requirements.)</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="filing-card">
+                        <h5>ROC Annual Filings (AOC-4 & MGT-7)</h5>
+                        <p>Balance Sheet and Annual Return for private companies. Handled via our ROC Compliance service.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I need help with ROC Annual Filings (AOC-4 & MGT-7)." class="btn btn-whatsapp mt-2" target="_blank">Get Assistance</a>
+                    </div>
+                    <div class="filing-card">
+                        <h5>GSTR-9 Annual Return</h5>
+                        <p>GST annual consolidation filing. Supported by our GST & Tax Filing service.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I need help with GSTR-9 Annual Return." class="btn btn-whatsapp mt-2" target="_blank">Get Assistance</a>
+                    </div>
+                    <div class="filing-card">
+                        <h5>Board Meeting Minutes</h5>
+                        <p>Quarterly board meeting documentation under ROC. Link to our Financial Advisory for support.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I need help with Board Meeting Minutes for ROC Compliance." class="btn btn-whatsapp mt-2" target="_blank">Get Assistance</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="filing-card">
+                        <h5>AGM (Annual General Meeting) Records</h5>
+                        <p>Mandatory documentation for companies under ROC. Our ROC Compliance experts manage this.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I need help with AGM Records and ROC Compliance." class="btn btn-whatsapp mt-2" target="_blank">Get Assistance</a>
+                    </div>
+                    <div class="filing-card">
+                        <h5>ITR Filing for Companies</h5>
+                        <p>Income Tax Return documents. Connect with our GST & Tax Filing service.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I need help with ITR Filing for Business." class="btn btn-whatsapp mt-2" target="_blank">Get Assistance</a>
+                    </div>
+                    <div class="filing-card">
+                        <h5>MSME & License Renewal Documents</h5>
+                        <p>Trade License, Food License, and MSME renewal papers. Covered by our Licenses & Registrations service.</p>
+                        <a href="https://wa.me/919905262859?text=Hi, I need help with MSME or License Renewal Documents." class="btn btn-whatsapp mt-2" target="_blank">Get Assistance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="text-muted">For full document preparation and filing support, <a href="https://wa.me/919905262859?text=Hi, I need assistance with specific documents and filings." class="btn btn-whatsapp" target="_blank">Chat with Us</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info mb-4">
+                        <h4><i class="fas fa-map-marker-alt me-2 text-primary"></i>Our Location</h4>
+                        <p>Prafulla Kanan, Kestopur, Kolkata, India</p>
+                        <h4><i class="fas fa-phone me-2 text-primary"></i>Phone</h4>
+                        <p>9905262859</p>
+                        <h4><i class="fas fa-envelope me-2 text-primary"></i>Email</h4>
+                        <p>rsfinsolution.office@gmail.com</p>
+                    </div>
+                    <a href="https://wa.me/919905262859?text=Hi, I'd like to discuss my financial needs with RS Finsolutions." class="btn btn-whatsapp">Start Chat on WhatsApp</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h4>Send Us a Message</h4>
+                        <form onsubmit="handleSubmit(event)">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Your Phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Describe your requirement (e.g., Company Registration, GST Filing, ROC Compliance)" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
